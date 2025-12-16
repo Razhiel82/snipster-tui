@@ -44,6 +44,9 @@ ex. [LinkedIn](https://www.linkedin.com/in/frederick-ming-b8b517197/)
 
 ## Version History
 
+* v0.5.2
+  * Correction of Readme
+
 * v0.5.0
   * Package cleanup
 
