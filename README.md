@@ -13,8 +13,8 @@ Goal of this is to learn the tooling for a real world App and while doing so to 
 ### Installing
 
 ```bash
-git clone git@https://github.com/Razhiel82/snipster-tui.git
-cd code_quality
+git clone https://github.com/Razhiel82/snipster-tui.git
+cd snipster-tui
 uv sync
 ```
 
