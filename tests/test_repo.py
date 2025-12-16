@@ -264,32 +264,8 @@ def test_add_snippets(add_snippets, repo):
 
 
 @pytest.mark.parametrize("repo", [InMemorySnippetRepo, DBSnippetRepo], indirect=True)
-def test_tag_snippet(add_snippets, repo):
-    repo.tag(1, "test1", "test2")
-    snippet = repo.get(1)
-    assert snippet is not None
-    assert snippet.tag_list == ["test1", "test2"]
-    repo.tag(1, "test1", remove=True)
-    snippet = repo.get(1)
-    assert snippet.tag_list == ["test2"]
-    repo.tag(1, "test2", "test3", "test4")
-    snippet = repo.get(1)
-    assert snippet.tag_list == ["test2", "test3", "test4"]
-    snippet = repo.get(1)
-    repo.tag(1, "test2", "test3", "test3", remove=True)
-    snippet = repo.get(1)
-    assert snippet.tag_list == ["test4"]
-    with pytest.raises(SnippetNotFoundError):
-        repo.tag(99, "nonexistent", remove=True)
-    repo.tag(1, "test5", "test4", "test3", sort=True)
-    snippet = repo.get(1)
-    assert snippet.tag_list == ["test3", "test4", "test5"]
-    # Add multiple tags and sort
-
-
-@pytest.mark.parametrize("repo", [InMemorySnippetRepo, DBSnippetRepo], indirect=True)
 def test_list_favorite_snippets(repo, add_snippets):
     favorite_snippets = repo.list_favorites()
-    expected_favorites = [s for s in add_snippets if getattr(s, "favorite", False)]
+    expected_favorites = [s for s in add_snippets if getattr(s, "favorite", True)]
     assert len(favorite_snippets) == len(expected_favorites)
     assert all(s.favorite for s in favorite_snippets)

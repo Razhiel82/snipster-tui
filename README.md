@@ -13,7 +13,7 @@ Goal of this is to learn the tooling for a real world App and while doing so to 
 ### Installing
 
 ```bash
-git clone git@https://github.com/Razhiel82/pybites_cohort.git
+git clone git@https://github.com/Razhiel82/snipster-tui.git
 cd code_quality
 uv sync
 ```
@@ -44,6 +44,9 @@ ex. [LinkedIn](https://www.linkedin.com/in/frederick-ming-b8b517197/)
 
 ## Version History
 
+* v0.5.0
+  * Package cleanup
+
 * v0.4.0
   * changes the tui:
     * Added Bindungs for favorit, edit and delete
@@ -59,7 +62,7 @@ ex. [LinkedIn](https://www.linkedin.com/in/frederick-ming-b8b517197/)
   * Initial alpha release
   * Basic Usage adding and deleting for snippets
 
-## Disclaimr
+## Disclaimer
 
 This is a personal project run at own risk! The DB is still subject to change.
 
