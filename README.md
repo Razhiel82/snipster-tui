@@ -27,12 +27,16 @@ uv sync
 uv run src/snipster_tui/tui.py
 ```
 
-## Help
+## Functionallity
 
-Any advise for common problems or issues.
+This are the Main functions of snipster
 
 ```bash
-TBD
+![Add Snippets](add.png)
+![List Snippets](list.png)
+![Edit Snippets](edit.png)
+![delete](delete.png)
+F = Favorite
 ```
 
 ## Authors
