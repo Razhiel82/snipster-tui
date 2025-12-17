@@ -31,13 +31,22 @@ uv run src/snipster_tui/tui.py
 
 This are the Main functions of snipster
 
-```bash
-![Add Snippets](add.png)
-![List Snippets](list.png)
-![Edit Snippets](edit.png)
-![delete](delete.png)
-F = Favorite
-```
+Add Snippet:
+
+<img width="971" height="633" alt="add" src="https://github.com/user-attachments/assets/bb6f531c-107c-47e6-966b-4e7ac617fcf4" />
+
+List Snippets:
+
+<img width="850" height="577" alt="list" src="https://github.com/user-attachments/assets/7a3697fb-2dba-4509-b732-a1f0bce2d05b" />
+
+Edit Snippet:
+
+<img width="850" height="658" alt="edit" src="https://github.com/user-attachments/assets/978430ac-24c8-4a72-8fac-bec055094853" />
+
+Delete Snippet:
+
+<img width="656" height="165" alt="delete" src="https://github.com/user-attachments/assets/bd641a9d-102f-4d08-b588-a5ca5e3ac224" />
+
 
 ## Authors
 
